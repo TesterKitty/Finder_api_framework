@@ -1,0 +1,30 @@
+[
+  {
+    "v": "1.7.1",
+    "ct": 1,
+    "sk": "",
+    "st": 0,
+    "aid": "1",
+    "lang": "",
+    "pf": "local",
+    "notify": true,
+    "sig": "177bbb5b175bbb13941d4708a80a6fc9",
+    "cv": "f9e6e44aaecae65e2ebef5c15b71539f_20652",
+    "others": {
+      "time_zone": "",
+      "platformUid": "f98b529a98eb2cde711d636bb8faf8b4b5c0ccd61629688525",
+      "time": 1629717693,
+      "platform": "Android"
+    }
+  },
+  [
+    {
+      "method": "login_getUid",
+      "params": {
+        "openId": "",
+        "udid": "f98b529a98eb2cde711d636bb8faf8b4b5c0ccd61629688525",
+        "packageSign": "EC:7A:50:48:F3:2C:52:65:B1:59:58:79:05:60:7A:06"
+      }
+    }
+  ]
+]

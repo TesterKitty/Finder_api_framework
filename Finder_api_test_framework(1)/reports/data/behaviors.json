@@ -1,0 +1,60 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "findler,apiauto",
+    "children" : [ {
+      "name" : "僚机&任务",
+      "children" : [ {
+        "name" : "出售僚机",
+        "children" : [ {
+          "name" : "test_drone_sell[caseinfo0]",
+          "uid" : "8dafbd9d77de3b91",
+          "parentUid" : "432218df406735eb658aaa28acee0686",
+          "status" : "passed",
+          "time" : {
+            "start" : 1629942352428,
+            "stop" : 1629942352465,
+            "duration" : 37
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '出售僚机', 'method': 'drone_sell', 'params': {'droneLevelId': 5004001, 'count': 1}, 'validate': [{'equals': {'retCode': 200}}, {'equals': {'resourceList': {'2001001': 20}}}, {'equals': {'asset': {2001001: '${get_asset(+,${get_login_data(2001001)},20)}'}}}]}" ]
+        } ],
+        "uid" : "432218df406735eb658aaa28acee0686"
+      }, {
+        "name" : "任务领取",
+        "children" : [ {
+          "name" : "test_task_gainTaskReward[caseinfo0]",
+          "uid" : "4dbd68c165bdb414",
+          "parentUid" : "167650549e8830e65a894db0c1e0f712",
+          "status" : "broken",
+          "time" : {
+            "start" : 1629942352537,
+            "stop" : 1629942352557,
+            "duration" : 20
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '领取任务奖励', 'method': 'task_gainTaskReward', 'params': {'taskId': 5902009}, 'validate': [{'equals': {'retCode': 200}}, {'equals': {'resourceList': {'2001002': 50}}}, {'equals': {'asset': {2001001: '${get_asset(+,${get_login_data(2001002)},50)}'}}}]}" ]
+        }, {
+          "name" : "test_task_gainTaskReward[caseinfo1]",
+          "uid" : "2d31c1ba6db86e8a",
+          "parentUid" : "167650549e8830e65a894db0c1e0f712",
+          "status" : "passed",
+          "time" : {
+            "start" : 1629942352723,
+            "stop" : 1629942352737,
+            "duration" : 14
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '领取任务奖励', 'method': 'task_gainTaskReward', 'params': {'taskId': 5902009}, 'validate': [{'equals': {'retCode': 681081}}]}" ]
+        } ],
+        "uid" : "167650549e8830e65a894db0c1e0f712"
+      } ],
+      "uid" : "eaada4ffd6e93da64a4a472160295388"
+    } ],
+    "uid" : "4a19cc2e932780a12c510e860c7abc77"
+  } ]
+}

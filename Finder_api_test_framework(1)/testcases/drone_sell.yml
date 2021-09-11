@@ -1,0 +1,13 @@
+- name:  出售僚机
+  method: drone_sell
+  params:
+        droneLevelId: 5004001
+        count: 1
+  validate:
+         - equals: {retCode: 200}
+         - equals:
+                 resourceList: {'2001001': 20}
+         - equals:
+                 asset:
+                       2001001: ${get_asset(+,${get_login_data(2001001)},20)}
+

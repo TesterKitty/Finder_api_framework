@@ -1,0 +1,18 @@
+- name: 领取任务奖励
+  method: task_gainTaskReward
+  params:
+         taskId: 5902009
+  validate:
+        - equals: {retCode: 200}
+        - equals:
+                resourceList: {'2001002': 50}
+        - equals:
+               asset:
+                     2001001 : ${get_asset(+,${get_login_data(2001002)},50)}
+#--------------------测试失败---------------------
+- name: 领取任务奖励
+  method: task_gainTaskReward
+  params:
+         taskId: 5902009
+  validate:
+        - equals: {retCode: 681081}
